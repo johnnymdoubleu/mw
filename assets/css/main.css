@@ -2725,13 +2725,17 @@
 		padding: 6em 0 4em 0;
 	}
 
+	.wrapper.style1{
+		background-color: #f6f6f6;
+	}
+
 		.wrapper > .inner {
 			margin: 0 auto;
 			width: 60em;
 		}
 
 		.wrapper.style2 {
-			background-color: #f6f6f6;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style3 {
@@ -2813,6 +2817,10 @@
 			top: 0;
 		}
 
+		#header #logo {
+			text-transform : none;
+		}
+
 		#header h1:hover{
 			-moz-transition: all 0.2s ease;
 			-webkit-transition: all 0.2s ease;
@@ -2823,7 +2831,7 @@
 			display: inline-block;
 			text-decoration: none;
 			transition-duration : 0.75s;
-			font-size : 15px;
+			font-size : 25px;
 		}
 
 		#header nav {
@@ -2913,7 +2921,7 @@
 			}
 
 				#header.alt h1 a {
-					color: #FFF;
+					color: #484848;
 				}
 
 			#header.alt nav {
@@ -2922,11 +2930,11 @@
 			}
 
 				#header.alt nav a {
-					color: #ddd;
+					color: #484848;
 				}
 
 					#header.alt nav a:active, #header.alt nav a:hover {
-						color: #FFF;
+						color: #33658A;
 					}
 
 			#header.alt .button {
@@ -3112,7 +3120,7 @@
 		padding: 16em 0 13em 0;
 		padding-bottom: 0;
 		background-attachment: fixed;
-		background-image: url("../../images/picmain.jpg");
+		background-image: url("../../images/worldmap.png");
 		background-position: center;
 		background-size: cover;
 		line-height: 1.75;
