@@ -157,7 +157,7 @@
 		}
 
 		.container {
-			width: 90%;
+			width: 95%;
 		}
 
 	}
@@ -1994,11 +1994,12 @@
 		}
 
 			.feature-grid .feature .content {
-				width: 60%;
+				width: 50%;
+				margin-bottom: 0;
 			}
 
 			.feature-grid .feature .image {
-				width: 30%;
+				width: 35%;
 			}
 
 				.feature-grid .feature .image img {
@@ -2022,6 +2023,9 @@
 
 			.feature-grid .feature {
 				margin-bottom: 3em;
+			}
+			.feature-grid .feature .content{
+				width : 55%
 			}
 
 		}
