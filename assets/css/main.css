@@ -2443,6 +2443,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			padding-top : 1.75em;
 		}
 
 			ul.actions li {
@@ -3122,7 +3123,7 @@
 
 	#banner {
 		padding: 16em 0 13em 0;
-		padding-bottom: 0;
+		/* padding-bottom: 0; */
 		background-attachment: fixed;
 		background-image: url("../../images/worldmap.png");
 		background-position: center;
@@ -3138,7 +3139,7 @@
 		#banner h2 {
 			color: #ffffff;
 			display: inline-block;
-			font-size: 3.5em;
+			font-size: 5.5em;
 			line-height: 1.35;
 			margin-bottom: 0.5em;
 		}
@@ -3147,10 +3148,15 @@
 		}
 
 		#banner p {
-			color: #aaa;
+			/* color: #aaa; */\
+			color : 000;
 			font-size: 1.5em;
-			margin-bottom: 1.75em;
-			text-transform: uppercase;
+			/* margin : none; */
+			margin-bottom: 0;
+			/* text-transform: uppercase; */
+		}
+		#banner p:last-child{
+			margin-bottom : none;
 		}
 
 		#banner p #watermark {
@@ -3168,9 +3174,9 @@
 				padding: 14em 0 11em 0;
 			}
 
-				#banner h2 {
-					font-size: 2.5em;
-				}
+			#banner h2 {
+				font-size: 5.5em;
+			}
 
 		}
 
@@ -3178,6 +3184,9 @@
 
 			#banner {
 				padding: 9em 0 7em 0;
+			}
+			#banner h2{
+				font-size : 5em;
 			}
 
 		}
@@ -3189,7 +3198,7 @@
 			}
 
 				#banner br {
-					display: none;
+					/* display: none; */
 				}
 
 				#banner h2 {
