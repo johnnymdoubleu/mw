@@ -1682,6 +1682,15 @@
 			text-decoration: none;
 		}
 
+		h1.publications{
+			margin-top: 2.5em;
+		}
+
+		h1 a.publications{
+			text-decoration: underline;
+			color: #f32853;
+		}
+
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
@@ -3114,7 +3123,7 @@
 			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-		
+
 		.author-highlighted{
 			font-weight:700
 		}
