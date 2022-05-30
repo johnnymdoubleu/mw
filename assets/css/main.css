@@ -3114,7 +3114,10 @@
 			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-
+		
+		.author-highlighted{
+			font-weight:700
+		}
 /* Banner */
 
 	body.is-touch #banner {
