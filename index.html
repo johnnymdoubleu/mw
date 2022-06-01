@@ -170,10 +170,25 @@
 												<ul class="actions small">
 													<li><a href="#" class="button fit small">PDF</a></li>
 													<li><a href="citation/rssnal.bib" class="button fit small">Cite</a></li>
-													<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
-														Launch demo modal
-													</button> -->
-													<!-- data-filename="/citation/rssnal.bib">Cite</a></li> -->
+													<div id="rssnal">
+
+													    <button onclick="$('#rssnal-bibtex').toggle();$('#rssnal-abstract').hide();">BibTeX</button>
+
+													    <form method="get" action="citation/rssnal.bib">
+													        <button type="submit">Cite</button>
+													    </form>
+
+													    <div id="rssnal-bibtex" style="display:none;">
+													        <pre>@thesis{lee2022rssnal,
+																		title = {Semismooth Newton Augmented Lagrangian Method for Solving Lasso Problems with Implementation in R},
+																	   author    = {Lee, MyungWon and Renfrew, Michael},
+																	   year      = {2022},
+																	   note      = {Undergraduate Honours Thesis},
+																	   school    = {University of Edinburgh},
+																	   address   = {Edinburgh, United Kingdom}
+																	}
+													</pre>
+													    </div>
 													<li><a href="https://github.com/johnnymdoubleu/lassoSSNAL" class="button fit small">Code</a></li>
 													<li><a href="#" class="button fit small">Slides</a></li>
 												</ul>
@@ -266,7 +281,6 @@
 						<li><a href="mailto: s1687781@ed.ac.uk" class="icon fa-envelope-o"></a></li>
 						<li><a href="https://github.com/johnnymdoubleu" class="icon fa-github"></a></li>
 						<li><a href="https://www.linkedin.com/in/johnnymwlee/" class="icon fa-linkedin-in"></a></li>
-
 					</ul>
 					<ul class="copyright">
 						<li>Based on <a href="https://templated.co/" style="color: #cb4154;"> TEMPLATED</a></li>
