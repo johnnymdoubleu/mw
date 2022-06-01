@@ -1648,12 +1648,12 @@
 		}
 
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 		color: #f32853;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 	strong, b {
@@ -1818,7 +1818,8 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #2F4858;
+		/* background-color: #2F4858; */
+		background-color: #33658A;
 		border-radius: 4px;
 		color: #ffffff !important;
 		border: 0;
@@ -1839,7 +1840,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #55DDE0;
+			/* background-color: #55DDE0; */
+			background-color: #F6AE2D;
 		}
 
 		input[type="submit"]:active,
