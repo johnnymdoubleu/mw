@@ -46,12 +46,12 @@
 						<h2>Introduction to PyScript</h2>
 						<p>The New Opening</p>
 					</header>
-
-					<a class="image fit">
-            <img src="../images/pyscript-screenshot.jpg" alt=""/>
-          </a>
           <div class="row 150%">
-            <div class="12u$">
+            <div class="one column"></div>
+            <div class="ten columns">
+              <a class="image fit">
+                <img src="../images/pyscript-screenshot.jpg" alt=""/>
+              </a>
               <!-- First paragraph -->
                 <div>
                   <h3>Python is finally in our Browser</h3>
@@ -87,7 +87,7 @@
                 <pre><code class="language-html">&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
 &lt;script defer src="https://pyscript.net/alpha/pyscript.js">&lt;/script&gt;</code></pre>
 
-                <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really!. It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
+                <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really! It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
               </div>
 
             <!-- Third Paragraph -->
@@ -96,16 +96,20 @@
               </div>
 
               <div>
-                <pre><code class="language-py">&lt;py-script&gt;
+                <pre><code class="language-py">#1st Method
+&lt;py-script&gt;
   print("Hello World")
-&lt;py-script&gt;</code></pre>
+&lt;py-script&gt;
+
+#2nd Method
+&lt;py-script src="/python-file.py"&gt;&lt;py-script&gt;</code></pre>
                 <p>
                   Alternatively, we can directly load Python REPL (Read Eval Print Loop) into HTML!
                 </p>
                 <pre><code class="language-py">&lt;py-repl id="my-repl" auto-generate="true"&gt;
   print("Hello World")
 &lt;/py-repl&gt;</code></pre>
-                <py-repl id="my-repl"  auto-generate="true">
+                <py-repl id="my-repl" auto-generate="true">
                   print("Hello World")
                 </py-repl>
               </div>
@@ -115,19 +119,17 @@
                 <p>
                   This is a <strong>Panel KMeans Clustering Demo</strong> that was embedded and coded by <a href="https://pyscript.net/examples/panel_kmeans.html">PyScript</a> &amp; <a href="https://github.com/katanaml/katanaml.github.io">Katana ML</a>
                 </p>
-                <div "12u$">
+                <div>
                   <!-- <embed type="text/html" src="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html" width="100%" height="500" onerror="alert('URL invalid !!');" /> -->
                   <!-- <object data="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html" width="100%" height="500" type="text/html"> </object> -->
                   <iframe id="forum_embed" src="https://katanaml.github.io/" width="100%" height="880" scrolling="no" frameborder="0"> </iframe>
                 </div>
               </div>
             </div>
+            <div class="one column"></div>
           </div>
-
-					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
-					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
-
 				</div>
+
 			</section>
 
     <!-- Footer -->
