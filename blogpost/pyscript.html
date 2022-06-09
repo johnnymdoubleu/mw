@@ -48,9 +48,44 @@
 					<a class="image fit">
             <img src="../images/pyscript-screenshot.jpg" alt=""/>
           </a>
-          <h2>Python is finally in our Browser</h2>
-					<p>Modern HTML/CSS/JavaScript are very powerful tool to create contents, introduce innovations and communicate in the world wide web. Today I want to introduce the new tool, <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> developed by Anaconda Engineers. Although it is still an early stage, this tool comprises of amazing features that will surprise you. Let's find it out!
-					</p>
+          <div class="row 150%">
+            <div class="12u$">
+              <!-- First paragraph -->
+                <div>
+                  <h3>Python is finally in our Browser</h3>
+                  <p>
+                    Modern HTML/CSS/JavaScript are very powerful tool to create contents, introduce innovations and communicate in the world wide web. Today I want to introduce the new alternative tool, <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> that was developed by the Anaconda Engineers. Although it is still an early stage, this tool comprises of amazing features that will surprise you. Let's find it out!
+                  </p>
+                </div>
+
+              <!-- Second Paragraph -->
+              <div>
+                <h3>What is PyScript?</h3>
+                <p>
+                  <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is a front-end framework developed to integrate the Python into the web. Python is a prgramming language that has a fascinating and easily understood syntax with a huge community. This amazing <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> aims to bring all of the features into the our browser. Hence, this framework allows users to create rich Python application sin the brower using HTML's interface and the power of Pyodide, WASM, and modern web technologies. To use <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> we need to import the JavaScript file into our HTML document. (You can import these two lines below!)
+                  <pre><code>&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
+&lt;script defer src="https://pyscript.net/alpha/pyscript.js">&lt;/script&gt;</code></pre>
+                  However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really!. It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of CPython, which is an interpreter of Python but compiled to WebAssembly
+                </p>
+              </div>
+
+
+                <div>
+                  <pre><code>&lt;py-script&gt;
+print("Hello World")
+&lt;py-script&gt;</code></pre>
+                  <p>
+                    <h4>Try this out!</h4>
+                    <!-- <py-repl id="my-repl"  auto-generate="true"></py-repl> -->
+                  </p>
+                </div>
+            </div>
+          </div>
+
+
+
+
+
 					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
 					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
 
@@ -80,6 +115,6 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/f03929a736.js" crossorigin="anonymous"></script>
-      <script src="https://pyscript.net/alpha/pyscript.js"></script>
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 	</body>
 </html>
