@@ -1687,7 +1687,7 @@
 			margin-top: 2.5em;
 		}
 
-		h1 a.publications{
+		a.publications{
 			font-size:15pt;
 			text-decoration: underline;
 			color: #f32853;
@@ -2433,6 +2433,10 @@
 				ul.alt li:first-child {
 					border-top: 0;
 					padding-top: 0;
+				}
+
+				ul.publications li{
+					font-size:11pt;
 				}
 
 		ul.icons {
