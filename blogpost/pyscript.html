@@ -90,15 +90,27 @@
                 <h3></h3>
               </div>
 
-                <div>
-                  <pre><code class="language-py">&lt;py-script&gt;
-  print("Hello World")
+              <div>
+                <pre><code class="language-py">&lt;py-script&gt;
+print("Hello World")
 &lt;py-script&gt;</code></pre>
-                  <p>
-                    <h4>Try this out!</h4>
-                    <!-- <py-repl id="my-repl"  auto-generate="true"></py-repl> -->
-                  </p>
+                <p>
+                  <h4>Try this out!</h4>
+                  <py-repl id="my-repl"  auto-generate="true">
+                    print("Hello World")
+                  </py-repl>
+                </p>
+              </div>
+
+              <div>
+                <h3>Examples</h3>
+                <p>
+                  This is a small example I found on web that was designed and coded by <a href="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html">Paul McGuire</a>
+                </p>
+                <div "12u$">
+                  <iframe src="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html" width="450" height="580"></iframe>
                 </div>
+              </div>
             </div>
           </div>
 
@@ -131,8 +143,8 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
       <!-- <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script> -->
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
       <script src="../assets/js/prism.js"></script>
 			<script src="https://kit.fontawesome.com/f03929a736.js" crossorigin="anonymous"></script>
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 	</body>
 </html>
