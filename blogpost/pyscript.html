@@ -64,12 +64,25 @@
               <div>
                 <h3>What is PyScript?</h3>
                 <p>
-                  <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is a front-end framework developed to integrate the Python into the web. Python is a prgramming language that has a fascinating and easily understood syntax with a huge community. This amazing <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> aims to bring all of the features into the our browser. Hence, this framework allows users to create rich Python application sin the brower using HTML's interface and the power of Pyodide, WASM, and modern web technologies. To use <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> we need to import the JavaScript file into our HTML document. (You can import these two lines below!)</p>
+                  <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is a front-end framework developed to integrate Python and web. Python is a prgramming language that has a fascinating and easily understood syntax with a huge community. With increasing usage of Python in the field of machine learning and data science, we were not able to use Python in the browser. This amazing <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> aims to bring all of the features of Python into the our browser. Hence, this framework allows users to create rich Python application sin the brower using HTML's interface and the power of <a href="https://pyodide.org/en/stable/">Pyodide</a>, <a href="https://github.com/ethanhs/python-wasm">WASM</a>, and modern web technologies.
+                </p>
+                <ul>
+                  <li><strong>Python in the browser:</strong> Enable drop-in content, external file hosting, and application hosting without the reliance on server-side configuration</li>
+                  <li><strong>Python ecosystem:</strong> Run many popular packages of Python and the scientific stack (such as numpy, pandas, scikit-learn, and more)</li>
+                  <li><strong>Python with JavaScript:</strong> Bi-directional communication between Python and Javascript objects and namespaces</li>
+                  <li><strong>Environment management:</strong> Allow users to define what packages and files to include for the page code to run</li>
+                  <li><strong>Visual application development:</strong> Use readily available curated UI components, such as buttons, containers, text boxes, and more</li>
+                  <li><strong>Flexible framework:</strong> A flexible framework that can be leveraged to create and share new pluggable and extensible components directly in Python</li>
+                </ul>
+                <p>
+                  To use <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> we now need to import the JavaScript file into our HTML document. (You can import these two lines below!)
+                </p>
 
-                  <pre><code class="language-html">&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
+
+                <pre><code class="language-html">&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
 &lt;script defer src="https://pyscript.net/alpha/pyscript.js">&lt;/script&gt;</code></pre>
 
-                  <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really!. It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
+                <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really!. It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
               </div>
 
             <!-- Third Paragraph -->
@@ -88,7 +101,7 @@
                 </div>
             </div>
           </div>
-          
+
 					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
 					<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
 
