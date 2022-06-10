@@ -44,89 +44,95 @@
 				<div class="container">
 					<header class="major special">
 						<h2>Introduction to PyScript</h2>
-						<p>The New Opening</p>
+						<p>The New Opening, &nbsp; 10<sup>th</sup> Jun 2022</p>
 					</header>
           <div class="row 150%">
             <div class="12u$">
             <!-- <div class="1u$" style="float:left"></div> -->
-            <div class="10u$ 12u$(xsmall)">
-              <a class="image fit">
-                <img src="../images/pyscript-screenshot.jpg" alt=""/>
-              </a>
-              <!-- First paragraph -->
+              <div class="10u$ 12u$(xsmall)">
+                <a class="image fit">
+                  <img src="../images/pyscript-screenshot.jpg" alt=""/>
+                </a>
+                <!-- First paragraph -->
+                  <div>
+                    <h3>Python is finally in our Browser</h3>
+                    <p>
+                      Modern HTML/CSS/JavaScript are very powerful tools to create contents, introduce innovations and communicate in the world wide web. Today I want to introduce the new and alternative tool called <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> that was developed by the Anaconda Engineers in 2022. Although it is still an early stage, this tool comprises of amazing features that will surprise you. Let's find it out!
+                    </p>
+                  </div>
+
+                <!-- Second Paragraph -->
                 <div>
-                  <h3>Python is finally in our Browser</h3>
+                  <h3>What is PyScript?</h3>
                   <p>
-                    Modern HTML/CSS/JavaScript are very powerful tool to create contents, introduce innovations and communicate in the world wide web. Today I want to introduce the new alternative tool, <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> that was developed by the Anaconda Engineers. Although it is still an early stage, this tool comprises of amazing features that will surprise you. Let's find it out!
+                    <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is a front-end framework developed to integrate Python and web. Python is a prgramming language that has a fascinating and easily understood syntax with a huge community. With increasing usage of Python in the field of machine learning and data science, we were not able to use Python in the browser. This amazing <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> aims to bring all of the features of Python into the our browser. Hence, this framework allows users to create rich Python application sin the brower using HTML's interface and the power of <a href="https://pyodide.org/en/stable/">Pyodide</a>, <a href="https://github.com/ethanhs/python-wasm">WASM</a>, and modern web technologies.
+                  </p>
+                  <a class="image fit">
+                    <img src="../images/pyscript-distribute.png" alt=""/>
+                  </a>
+                  <ul>
+                    <li><strong>Python in the browser:</strong> Enable drop-in content, external file hosting, and application hosting without the reliance on server-side configuration</li>
+                    <li><strong>Python ecosystem:</strong> Run many popular packages of Python and the scientific stack (such as numpy, pandas, scikit-learn, and more)</li>
+                    <li><strong>Python with JavaScript:</strong> Bi-directional communication between Python and Javascript objects and namespaces</li>
+                    <li><strong>Environment management:</strong> Allow users to define what packages and files to include for the page code to run</li>
+                    <li><strong>Visual application development:</strong> Use readily available curated UI components, such as buttons, containers, text boxes, and more</li>
+                    <li><strong>Flexible framework:</strong> A flexible framework that can be leveraged to create and share new pluggable and extensible components directly in Python</li>
+                  </ul>
+                  <p>
+                    To use <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> we now need to import the JavaScript file into our HTML document. (You can import these two lines below!)
+                  </p>
+                  <a class="image" style="text-align:center; display:block;">
+                    <img src="../images/pyscript-pyodide.png" alt=""/>
+                  </a>
+
+                  <pre><code class="language-html">&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
+  &lt;script defer src="https://pyscript.net/alpha/pyscript.js">&lt;/script&gt;</code></pre>
+
+                  <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really! It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
+                </div>
+
+              <!-- Third Paragraph -->
+                <div>
+                  <h3></h3>
+                </div>
+
+                <div>
+                  <pre><code class="language-py">#1st Method
+  &lt;py-script&gt;
+    print("Hello World")
+  &lt;py-script&gt;
+
+  #2nd Method
+  &lt;py-script src="/python-file.py"&gt;&lt;py-script&gt;</code></pre>
+                  <p>
+                    Alternatively, we can directly load Python REPL (Read Eval Print Loop) into HTML!
+                  </p>
+                  <pre><code class="language-py">&lt;py-repl id="my-repl" auto-generate="true"&gt;
+    print("Hello World")
+  &lt;/py-repl&gt;</code></pre>
+                  <py-repl id="my-repl" auto-generate="true">
+                    print("Hello World")
+                  </py-repl>
+                </div>
+
+                <div>
+                  <h3>Examples</h3>
+                  <p>
+                    This is a <strong>Panel KMeans Clustering Demo</strong> that was embedded and coded by <a href="https://pyscript.net/examples/panel_kmeans.html">PyScript</a> &amp; <a href="https://github.com/katanaml/katanaml.github.io">Katana ML</a>. <br> You can find more examples are available at <a href="https://pyscript.net/examples/">https://pyscript.net/examples/</a>.
+                  </p>
+                  <div>
+                    <iframe id="forum_embed" src="https://katanaml.github.io/" width="100%" height="880" scrolling="no" frameborder="0"> </iframe>
+                  </div>
+                </div>
+
+                <!-- Last Paragraph -->
+                <div>
+                  <h3>My Thoughts on PyScript</h3>
+                  <p>
+                    PyScript was only developed 3 months ago and remain in an early stage of its application. As you noticed from above, it takes some time to load on the browers. Despite the limitations, many of us, including myself have been waiting for this feature to be released. I strongly believe that all of us are currently appreciating this framework and sending gratitude towards the Anaconda Team. Now it possess humongous potential to bring changes in the front-end developer community as well as the machine learning / data science communities. Especially in academia, researchers can employ PyScript to display their ML projects using visualisation tools or output the results of their code. Perhaps we could utilise this in the Web 3.0 framework in the future one day!
                   </p>
                 </div>
-
-              <!-- Second Paragraph -->
-              <div>
-                <h3>What is PyScript?</h3>
-                <p>
-                  <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is a front-end framework developed to integrate Python and web. Python is a prgramming language that has a fascinating and easily understood syntax with a huge community. With increasing usage of Python in the field of machine learning and data science, we were not able to use Python in the browser. This amazing <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> aims to bring all of the features of Python into the our browser. Hence, this framework allows users to create rich Python application sin the brower using HTML's interface and the power of <a href="https://pyodide.org/en/stable/">Pyodide</a>, <a href="https://github.com/ethanhs/python-wasm">WASM</a>, and modern web technologies.
-                </p>
-                <a class="image fit">
-                  <img src="../images/pyscript-distribute.png" alt=""/>
-                </a>
-                <ul>
-                  <li><strong>Python in the browser:</strong> Enable drop-in content, external file hosting, and application hosting without the reliance on server-side configuration</li>
-                  <li><strong>Python ecosystem:</strong> Run many popular packages of Python and the scientific stack (such as numpy, pandas, scikit-learn, and more)</li>
-                  <li><strong>Python with JavaScript:</strong> Bi-directional communication between Python and Javascript objects and namespaces</li>
-                  <li><strong>Environment management:</strong> Allow users to define what packages and files to include for the page code to run</li>
-                  <li><strong>Visual application development:</strong> Use readily available curated UI components, such as buttons, containers, text boxes, and more</li>
-                  <li><strong>Flexible framework:</strong> A flexible framework that can be leveraged to create and share new pluggable and extensible components directly in Python</li>
-                </ul>
-                <p>
-                  To use <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> we now need to import the JavaScript file into our HTML document. (You can import these two lines below!)
-                </p>
-                <a class="image" style="text-align:center; display:block;">
-                  <img src="../images/pyscript-pyodide.png" alt=""/>
-                </a>
-
-                <pre><code class="language-html">&lt;link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/&gt;
-&lt;script defer src="https://pyscript.net/alpha/pyscript.js">&lt;/script&gt;</code></pre>
-
-                <p>However, does this mean <a href="https://engineering.anaconda.com/2022/04/welcome-pyscript.html">PyScript</a> is running on JavaScript? Not really! It works by Pyodide and WebAssembly. <a href="https://pyodide.org/en/stable/">Pyodide</a> is a Python distribution for the brower and it is a port of <a href="https://github.com/python/cpython">CPython</a>, which is an interpreter of Python but compiled to WebAssembly. Since WebAssembly is a binary code format, browsers could also understand as well. So Python is using WebAssembly to embed a <a href="https://github.com/python/cpython">CPython</a> interpreter in the browser and this allows Python communicate with HTML.</p>
               </div>
-
-            <!-- Third Paragraph -->
-              <div>
-                <h3></h3>
-              </div>
-
-              <div>
-                <pre><code class="language-py">#1st Method
-&lt;py-script&gt;
-  print("Hello World")
-&lt;py-script&gt;
-
-#2nd Method
-&lt;py-script src="/python-file.py"&gt;&lt;py-script&gt;</code></pre>
-                <p>
-                  Alternatively, we can directly load Python REPL (Read Eval Print Loop) into HTML!
-                </p>
-                <pre><code class="language-py">&lt;py-repl id="my-repl" auto-generate="true"&gt;
-  print("Hello World")
-&lt;/py-repl&gt;</code></pre>
-                <py-repl id="my-repl" auto-generate="true">
-                  print("Hello World")
-                </py-repl>
-              </div>
-
-              <div>
-                <h3>Examples</h3>
-                <p>
-                  This is a <strong>Panel KMeans Clustering Demo</strong> that was embedded and coded by <a href="https://pyscript.net/examples/panel_kmeans.html">PyScript</a> &amp; <a href="https://github.com/katanaml/katanaml.github.io">Katana ML</a>
-                </p>
-                <div>
-                  <!-- <embed type="text/html" src="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html" width="100%" height="500" onerror="alert('URL invalid !!');" /> -->
-                  <!-- <object data="http://www.ptmcg.com/dev/pyscript/random_nums_with_score.html" width="100%" height="500" type="text/html"> </object> -->
-                  <iframe id="forum_embed" src="https://katanaml.github.io/" width="100%" height="880" scrolling="no" frameborder="0"> </iframe>
-                </div>
-              </div>
-            </div>
             <!-- <div class="1u" style="float:right"></div> -->
             </div>
           </div>
@@ -135,21 +141,21 @@
 			</section>
 
     <!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="mailto: s1687781@ed.ac.uk"class="icon fa-envelope-o"></a></li>
-						<li><a href="https://github.com/johnnymdoubleu"  target="_blank" class="icon fa-github"></a></li>
-						<li><a href="https://www.linkedin.com/in/johnnymwlee/"  target="_blank" class="icon fa-linkedin-in"></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Based on <a href="https://htmltemplates.co/" style="color: #cb4154;">TEMPLATED.CO</a></li>
-						<li>Reorganised by &copy;MW 2022</li>
-						<li>Contact : s1687781 (at) ed (dot) ac (dot) uk</li>
-						<li>Address : School of Mathematics, James Clerk Maxwell Building, Peter Guthrie Tait Rd, Edinburgh, EH9 3FD, United Kingdom</li>
-					</ul>
-				</div>
-			</footer>
+      <footer id="footer">
+        <div class="container">
+          <ul class="icons">
+            <li><a href="mailto: s1687781@ed.ac.uk"class="icon fa-envelope-o"></a></li>
+            <li><a href="https://github.com/johnnymdoubleu"  target="_blank" class="icon fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/johnnymwlee/"  target="_blank" class="icon fa-linkedin-in"></a></li>
+          </ul>
+          <ul class="copyright publications">
+            <li>Based on <a href="https://htmltemplates.co/" style="color: #cb4154;">TEMPLATED.CO</a></li>
+            <li>Reorganised by &copy;MW 2022</li>
+            <li>Contact : s1687781 (at) ed (dot) ac (dot) uk</li>
+            <li>Address : School of Mathematics, James Clerk Maxwell Building, Peter Guthrie Tait Rd, Edinburgh, EH9 3FD, United Kingdom</li>
+          </ul>
+        </div>
+      </footer>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
