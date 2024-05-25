@@ -107,6 +107,9 @@
 		.container {
 			width: 80em;
 		}
+		.image{
+			width: 28%;
+		}
 
 	}
 
@@ -133,7 +136,6 @@
 		.container {
 			width: 65em;
 		}
-
 	}
 
 	@media screen and (max-width: 980px) {
@@ -2041,7 +2043,6 @@
 			.feature-grid .feature .content{
 				width : 55%
 			}
-
 		}
 
 		@media screen and (max-width: 980px) {
