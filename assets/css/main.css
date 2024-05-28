@@ -141,6 +141,9 @@
 		.container {
 			width: 65em;
 		}
+		.image.right{
+			width: 25%;
+		}		
 	}
 
 	@media screen and (max-width: 980px) {
